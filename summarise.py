@@ -16,7 +16,7 @@ def summarize_url(url):
 
     # Summarize text using OpenAI GPT-4 model
     response = openai.ChatCompletion.create(
-        model="gpt-4-0613",
+        model="gpt-4o",
         messages=[
             {"role": "system", "content": "You are an assistant that summarizes text."},
             {"role": "user", "content": f"Summarize the following text:\n{text}"}
